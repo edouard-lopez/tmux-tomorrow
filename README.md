@@ -2,6 +2,10 @@
 
 Complete tomorrow theme for `tmux` based on [KuoE0/tmux-tomorrow-night](https://github.com/KuoE0/tmux-tomorrow-night):
 
+![Tomorrow theme for tmux](./screenshot.png)
+
+## Variations
+
 * Tomorrow ;
 * Tomorrow-Night ;
 * Tomorrow-Night-Bright ;
