@@ -1,16 +1,18 @@
 # tmux-tomorrow
 
-Complete tomorrow theme for `tmux` based on [KuoE0/tmux-tomorrow-night](https://github.com/KuoE0/tmux-tomorrow-night):
+Tomorrow **theme for `tmux`** based on [KuoE0's work](https://github.com/KuoE0/tmux-tomorrow-night) and official specifications from [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) (_i.e._ _dark_ and _light_).
 
 ![Tomorrow theme for tmux](./screenshot.png)
 
 ## Variations
 
-* Tomorrow ;
-* Tomorrow-Night ;
-* Tomorrow-Night-Bright ;
-* Tomorrow-Night-Eighties ;
-* Tomorrow-Night-Eighties-Blue.
+All [5 variations](https://github.com/chriskempson/tomorrow-theme#take-a-look) have been implemented:
+
+1. Tomorrow ;
+1. Tomorrow-Night ;
+1. Tomorrow-Night-Bright ;
+1. Tomorrow-Night-Eighties ;
+1. Tomorrow-Night-Eighties-Blue.
 
 ## Usage
 
