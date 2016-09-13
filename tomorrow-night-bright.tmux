@@ -2,18 +2,19 @@
 # ** Colorsheme: Tomorrow night-eighties swatch: https://raw.github.com/ChrisKempson/Tomorrow-Theme/master/Images/Tomorrow-Night-Eighties-Palette.png
 #
 # Color key:
-#   #1d1f21 Background
-#   #282a2e Current Line
-#   #373b41 Selection
-#   #c5c8c6 Foreground
+#   #000000 Background
+#   #2a2a2a Current Line
+#   #424242 Selection
+#   #eaeaea Foreground
 #   #969896 Comment
-#   #cc6666 Red
-#   #de935f Orange
-#   #f0c674 Yellow
-#   #b5bd68 Green
-#   #8abeb7 Aqua
-#   #81a2be Blue
-#   #b294bb Purple
+#   #d54e53 Red
+#   #e78c45 Orange
+#   #e7c547 Yellow
+#   #b9ca4a Green
+#   #70c0b1 Aqua
+#   #7aa6da Blue
+#   #c397d8 Purple
+
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -21,34 +22,34 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 tmux set -g status-bg default
 
 ## highlight active window
-tmux setw -g window-status-current-bg "#282a2e"
-tmux setw -g window-status-current-fg "#81a2be"
+tmux setw -g window-status-current-bg "#2a2a2a"
+tmux setw -g window-status-current-fg "#7aa6da"
 
 ## highlight activity in status bar
-tmux setw -g window-status-activity-fg "#8abeb7"
-tmux setw -g window-status-activity-bg "#1d1f21"
+tmux setw -g window-status-activity-fg "#70c0b1"
+tmux setw -g window-status-activity-bg "#000000"
 
 ## pane border and colors
 tmux set -g pane-active-border-bg default
-tmux set -g pane-active-border-fg "#373b41"
+tmux set -g pane-active-border-fg "#424242"
 tmux set -g pane-border-bg default
-tmux set -g pane-border-fg "#373b41"
+tmux set -g pane-border-fg "#424242"
 
-tmux set -g clock-mode-colour "#81a2be"
+tmux set -g clock-mode-colour "#7aa6da"
 tmux set -g clock-mode-style 24
 
-tmux set -g message-bg "#8abeb7"
+tmux set -g message-bg "#70c0b1"
 tmux set -g message-fg "#000000"
 
-tmux set -g message-command-bg "#8abeb7"
+tmux set -g message-command-bg "#70c0b1"
 tmux set -g message-command-fg "#000000"
 
 # message bar or "prompt"
 tmux set -g message-bg "#2d2d2d"
 tmux set -g message-fg "#cc99cc"
 
-tmux set -g mode-bg "#1d1f21"
-tmux set -g mode-fg "#de935f"
+tmux set -g mode-bg "#000000"
+tmux set -g mode-fg "#e78c45"
 
 # right side of status bar holds "[host name] (date time)"
 tmux set -g status-right-length 100

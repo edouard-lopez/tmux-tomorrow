@@ -1,19 +1,20 @@
+#@IgnoreInspection BashAddShebang
 # ** Attribution: A modified version of https://github.com/connrs/dotfiles/blob/master/tmux/tomorrow-night.tmux
 # ** Colorsheme: Tomorrow night-eighties swatch: https://raw.github.com/ChrisKempson/Tomorrow-Theme/master/Images/Tomorrow-Night-Eighties-Palette.png
 #
 # Color key:
-#   #1d1f21 Background
-#   #282a2e Current Line
-#   #373b41 Selection
-#   #c5c8c6 Foreground
-#   #969896 Comment
-#   #cc6666 Red
-#   #de935f Orange
-#   #f0c674 Yellow
-#   #b5bd68 Green
-#   #8abeb7 Aqua
-#   #81a2be Blue
-#   #b294bb Purple
+#   #002451 Background
+#   #00346e Current Line
+#   #003f8e Selection
+#   #ffffff Foreground
+#   #7285b7 Comment
+#   #ff9da4 Red
+#   #ffc58f Orange
+#   #ffeead Yellow
+#   #d1f1a9 Green
+#   #99ffff Aqua
+#   #bbdaff Blue
+#   #ebbbff Purple
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -21,52 +22,52 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 tmux set -g status-bg default
 
 ## highlight active window
-tmux setw -g window-status-current-bg "#282a2e"
-tmux setw -g window-status-current-fg "#81a2be"
+tmux setw -g window-status-current-bg "#00346e"
+tmux setw -g window-status-current-fg "#bbdaff"
 
 ## highlight activity in status bar
-tmux setw -g window-status-activity-fg "#8abeb7"
-tmux setw -g window-status-activity-bg "#1d1f21"
+tmux setw -g window-status-activity-fg "#99ffff"
+tmux setw -g window-status-activity-bg "#002451"
 
 ## pane border and colors
 tmux set -g pane-active-border-bg default
-tmux set -g pane-active-border-fg "#373b41"
+tmux set -g pane-active-border-fg "#003f8e"
 tmux set -g pane-border-bg default
-tmux set -g pane-border-fg "#373b41"
+tmux set -g pane-border-fg "#003f8e"
 
-tmux set -g clock-mode-colour "#81a2be"
+tmux set -g clock-mode-colour "#bbdaff"
 tmux set -g clock-mode-style 24
 
-tmux set -g message-bg "#8abeb7"
+tmux set -g message-bg "#99ffff"
 tmux set -g message-fg "#000000"
 
-tmux set -g message-command-bg "#8abeb7"
+tmux set -g message-command-bg "#99ffff"
 tmux set -g message-command-fg "#000000"
 
 # message bar or "prompt"
-tmux set -g message-bg "#2d2d2d"
-tmux set -g message-fg "#cc99cc"
+tmux set -g message-bg "#002451"
+tmux set -g message-fg "#ebbbff"
 
-tmux set -g mode-bg "#1d1f21"
-tmux set -g mode-fg "#de935f"
+tmux set -g mode-bg "#002451"
+tmux set -g mode-fg "#ffc58f"
 
 # right side of status bar holds "[host name] (date time)"
 tmux set -g status-right-length 100
 tmux set -g status-right-fg black
 tmux set -g status-right-attr bold
-tmux set -g status-right '#[fg=#f99157,bg=#2d2d2d] %H:%M |#[fg=#6699cc] %y.%m.%d '
+tmux set -g status-right '#[fg=#ffc58f,bg=#002451] %H:%M |#[fg=#bbdaff] %y.%m.%d '
 
 # make background window look like white tab
 tmux set-window-option -g window-status-bg default
 tmux set-window-option -g window-status-fg white
 tmux set-window-option -g window-status-attr none
-tmux set-window-option -g window-status-format '#[fg=#6699cc,bg=colour235] #I #[fg=#999999,bg=#2d2d2d] #W #[default]'
+tmux set-window-option -g window-status-format '#[fg=#bbdaff,bg=colour235] #I #[fg=#7285b7,bg=#002451] #W #[default]'
 
 # make foreground window look like bold yellow foreground tab
 tmux set-window-option -g window-status-current-attr none
-tmux set-window-option -g window-status-current-format '#[fg=#f99157,bg=#2d2d2d] #I #[fg=#cccccc,bg=#393939] #W #[default]'
+tmux set-window-option -g window-status-current-format '#[fg=#ffc58f,bg=#002451] #I #[fg=#ffffff,bg=#00346e] #W #[default]'
 
 # active terminal yellow border, non-active white
 tmux set -g pane-border-bg default
-tmux set -g pane-border-fg "#999999"
-tmux set -g pane-active-border-fg "#f99157"
+tmux set -g pane-border-fg "#7285b7"
+tmux set -g pane-active-border-fg "#ffc58f"
