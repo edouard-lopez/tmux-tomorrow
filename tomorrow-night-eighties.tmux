@@ -15,10 +15,13 @@
 
 ## set status bar
 set -g status-bg default
-
-## highlight active window
 setw -g window-status-current-bg "#393939"
 setw -g window-status-current-fg "#6699cc"
+
+## highlight active window
+setw -g window-style 'bg=#393939'
+setw -g window-active-style 'bg=#2d2d2d'
+setw -g pane-active-border-style ''
 
 ## highlight activity in status bar
 setw -g window-status-activity-fg "#66cccc"
